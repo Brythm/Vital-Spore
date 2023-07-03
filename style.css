@@ -299,6 +299,7 @@ font-family: 'Righteous', cursive;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     text-align: center;
+    box-shadow: 0 0 0 3px rgba(166, 144, 125, 0.5);
 }
 
 .thanks {
@@ -335,4 +336,19 @@ font-family: 'Righteous', cursive;
     padding-left: 7vw;
     padding-right: 7vw;
 }
+/*Search Field*/
+
+#search-field:focus {
+    box-shadow: 0 0 0 3px rgba(17, 93, 10, 0.6);
+    outline: none;
+}
+
+.btn-outline-success:focus {
+    box-shadow: 0 0 0 3px rgba(17, 93, 10, 0.6);
+    outline: none;
+    outline-offset: 0;
+}
+
+
+
 
