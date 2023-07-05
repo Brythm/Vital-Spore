@@ -5,9 +5,8 @@
   box-sizing: border-box;
   font-family: 'Righteous', cursive;
 }
-
 body {
-  color: #ededed; /*Page Text Color*/
+  color: #f9f9f9; /*Page Text Color*/
 }
 
 /*HEADER CONTENT*/
@@ -23,7 +22,6 @@ body {
   align-items: center;
   z-index: 20 ;
 }
-
 .logo {
   position:relative;
   font-size: 45px;
@@ -34,7 +32,6 @@ body {
   text-decoration-color: #02bc08;
   -moz-text-decoration-color: #02bc08;
 }
-
 .logo::before {
   content: '';
   position:absolute;
@@ -47,7 +44,6 @@ body {
   -webkit-animation: showRight 1s ease forwards;
   animation-delay: .4s;
 }
-
 .navbar a {
   font-size: 25px;
   color: black;
@@ -64,7 +60,6 @@ body {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-
 .navbar a:hover {
   color: #02bc08;
 }
@@ -81,11 +76,9 @@ body {
   padding: 0 10%;
   background: #F9F9F9;
 }
-
 .home-content {
   max-width: 600px;
 }
-
 .home-content h1 {
   position: relative;
   font-size: 56px;
@@ -94,7 +87,6 @@ body {
   z-index: 20;
   color: #d78100;
 }
-
 .home-content h1::before {
   content: '';
   position:absolute;
@@ -107,7 +99,6 @@ body {
   -webkit-animation: showRight 1s ease forwards;
   animation-delay: 1s;
 }
-
 .home-content h3{
   position: relative;
   font-size: 32px;
@@ -115,7 +106,6 @@ body {
   color: #02bc08;
   z-index: 20;
 }
-
 .home-content h3::before {
   content: '';
   position:absolute;
@@ -128,8 +118,6 @@ body {
   -webkit-animation: showRight 1s ease forwards;
   animation-delay: 1.3s;
 }
-
-
 .home-content p {
   position: relative;
   font-size: 16px;
@@ -137,7 +125,6 @@ body {
   margin: 20px 0 40px;
   z-index: 20;
 }
-
 .home-content p::before {
   content: '';
   position:absolute;
@@ -150,7 +137,6 @@ body {
   -webkit-animation: showRight 1s ease forwards;
   animation-delay: 1.6s;
 }
-
 .home-content .btn-box {
   position: relative;
   display: flex;
@@ -158,7 +144,6 @@ body {
   width: 345px;
   height: 50px;
 }
-
 .home-content .btn-box::before {
   content: '';
   position:absolute;
@@ -172,7 +157,6 @@ body {
   animation-delay: 1.9s;
   z-index: 20;
 }
-
 .background-layer {
   position: fixed;
   bottom: 0;
@@ -181,13 +165,12 @@ body {
   height: 100%;
   background: url('/assets/images/STOCK/homeBackgroundFinal.png') no-repeat center center / cover;
   display: flex;
-  transition: 6s;
-  -webkit-transition: 6s;
-  -moz-transition: 6s;
-  -ms-transition: 6s;
-  -o-transition: 6s;
+  transition: 4s;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -ms-transition: 4s;
+  -o-transition: 4s;
 }
-
 .background-layer:hover {
   opacity: .3;
   transition: 2s;
@@ -196,9 +179,6 @@ body {
   -ms-transition: 2s;
   -o-transition: 2s;
 }
-
-
-
 .background-layer::after {
   content: '';
   position: absolute;
@@ -209,9 +189,6 @@ body {
   animation: showRight 1s ease forwards;
   -webkit-animation: showRight 1s ease forwards;
 }
-
-
-
 .home-imgHover {
   position: relative;
   top: 0;
@@ -227,7 +204,6 @@ body {
   animation-delay: 4s;
   pointer-events: none;
 }
-
 .home-imgHover::after {
   content: '';
   position:absolute;
@@ -241,8 +217,6 @@ body {
   animation-delay: 3s;
   z-index: -10;
 }
-
-
 
 /*Homepage Buttons Main Content*/
 
@@ -383,143 +357,6 @@ body {
 
 .home-sci a:hover::before {
   width: 100%;
-}
-
-/*Fresh Mushroom Item page*/
-
-.item-list {
-    color: #a6907d;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-start;
-    padding-top: 6vh;
-}
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.item img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.add-to-cart-btn {
-    height: fit-content;
-    text-align: center;
-    object-fit: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding-top: 10px;
-}
-
-.add-to-cart-btn {
-    font-size: 1rem;
-    padding: 10px 10px;
-    color: #032700;
-    background-color: #a6907d;
-    font-family: 'Righteous', cursive;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 0 3px rgba(166, 144, 125, 0.5);
-}
-
-.quantity {
-    display: flex;
-    align-items:flex-end;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-  .quantity button {
-    padding:0 10px;
-    margin: 1px;
-    color: #032700;
-    background-color: #a6907d;
-    font-family: 'Righteous', cursive;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 0 3px rgba(166, 144, 125, 0.5);
-  }
-
-  /*Removes internal counter from quantity input field */
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
-
-
-  .count {
-    width: 40px; /* Adjust the width as needed */
-    text-align: center;
-  }
-
-#clear-cart-btn {
-    height: fit-content;
-    color: #032700;
-    background-color: #a6907d;
-    position:relative;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-}
-
-#clear-cart-btn {
-    font-size: 1rem;
-    padding: 10px 10px;
-    color: #032700;
-    background-color: #a6907d;
-    font-family: 'Righteous', cursive;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 0 3px rgba(166, 144, 125, 0.5);
-}
-
-.shopping-cart {
-    height: fit-content;
-    color: #a6907d;
-    object-fit: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding-top: 10px;
-}
-
-#cart-total {
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 /*KEY FRAMES*/

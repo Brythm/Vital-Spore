@@ -1,0 +1,159 @@
+/*HOME PAGE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    background: #F9F9F9;
+  }
+  body {
+    color: #F9F9F9; /*Page Text Color*/
+  }
+  /*HEADER CONTENT*/
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20 ;
+  }
+  .logo {
+    position:relative;
+    font-size: 45px;
+    color: #02bc08;
+    text-decoration: none;
+    font-weight: 550;
+    text-decoration: underline;
+    text-decoration-color: #02bc08;
+    -moz-text-decoration-color: #02bc08;
+  }
+  .logo::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 110%;
+    height: 100%;
+    background: #F9F9F9;
+    animation: showRight 1s ease forwards;
+    -webkit-animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+  }
+
+  .navbar::before {
+    content: '';
+    position:absolute;
+    top: 10px;
+    right: 0;
+    width: 35%;
+    height: 80%;
+    background: #F9F9F9;
+    animation: showRight 1s ease forwards;
+    -webkit-animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+  }
+
+  .navbar a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+  .navbar a:hover {
+    color: #02bc08;
+  }
+  .navbar a.active {
+    color: #d78100;
+  }
+
+  /*HOME CONTENT*/
+
+  .home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: #F9F9F9;
+  }
+ /*BACKGROUND LAYER*/
+  .background-layer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('/assets/images/STOCK/homeBackgroundFinal.png') no-repeat center center / cover;
+    display: flex;
+    transition: 6s;
+    -webkit-transition: 6s;
+    -moz-transition: 6s;
+    -ms-transition: 6s;
+    -o-transition: 6s;
+  }
+  .background-layer:hover {
+    opacity: .3;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+  }
+  .background-layer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    -webkit-animation: showRight 1s ease forwards;
+  }
+  .home-imgHover {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    animation-delay: 4s;
+    pointer-events: none;
+  }
+  .home-imgHover::after {
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+    animation: showRight 1s ease forwards;
+    -webkit-animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: -10;
+  }
+  /*KEY FRAMES*/
+  @keyframes showRight {
+    100% {
+      width: 0;
+    }
+  }
