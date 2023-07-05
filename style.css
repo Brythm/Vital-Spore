@@ -7,7 +7,6 @@
 }
 
 body {
-  background-color:#081b29; /*background*/
   color: #ededed; /*Page Text Color*/
 }
 
@@ -26,10 +25,24 @@ body {
 }
 
 .logo {
-  font-size: 25px;
+  position:relative;
+  font-size: 45px;
   color: #ededed;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 550;
+}
+
+.logo::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 125%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: .4s;
 }
 
 .navbar a {
@@ -57,6 +70,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 10%;
+  background: #081b29;
 }
 
 .home-content {
@@ -64,28 +78,128 @@ body {
 }
 
 .home-content h1 {
+  position: relative;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
 }
 
+.home-content h1::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 125%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
 .home-content h3{
+  position: relative;
   font-size: 32px;
   font-weight: 700;
   color: #00abf0;
 }
 
+.home-content h3::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 125%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
+}
+
+
 .home-content p {
+  position: relative;
   font-size: 16px;
   margin: 20px 0 40px;
 }
 
+.home-content p::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 125%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
 .home-content .btn-box {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 345px;
   height: 50px;
 }
+
+.home-content .btn-box::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 125%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+  z-index: 2;
+}
+
+.background-layer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('/assets/images/STOCK/moleculeBackground.png') no-repeat center center / cover;
+  display: flex;
+}
+
+.home-imgHover {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  animation: manipActiveHover .1s forwards;
+  animation-delay: 4s;
+  pointer-events: none;
+}
+.home-imgHover::after {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 3s;
+  z-index: 100;
+}
+
+
 
 /*Homepage Buttons Main Content*/
 
@@ -163,6 +277,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.home-sci::before {
+  content: '';
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  -webkit-animation: showRight 1s ease forwards;
+  animation-delay: 2.5s;
+  z-index: 2;
+}
+
 .home-sci a {
   position: relative;
   display: inline-flex;
@@ -212,10 +341,6 @@ body {
 .home-sci a:hover::before {
   width: 100%;
 }
-
-
-
-
 
 /*Fresh Mushroom Item page*/
 
@@ -354,7 +479,18 @@ body {
     right: 0;
 }
 
+/*KEY FRAMES*/
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
 
+@keyframes manipActiveHover {
+  100% {
+    pointer-events: auto;
+  }
+}
 
 
 
