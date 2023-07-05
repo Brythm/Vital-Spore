@@ -207,7 +207,7 @@ body {
   width: 100%;
   height: 100%;
   animation: showRight 1s ease forwards;
-  -webkit-animation: showRight 1s ease forwards 2s ease-in;
+  -webkit-animation: showRight 1s ease forwards;
 }
 
 
