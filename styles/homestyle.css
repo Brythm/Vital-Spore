@@ -305,7 +305,7 @@ body {
   background: #F9F9F9;
   animation: showRight 1s ease forwards;
   -webkit-animation: showRight 1s ease forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1s;
   z-index: 2;
 }
 
