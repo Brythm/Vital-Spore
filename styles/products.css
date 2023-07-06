@@ -5,19 +5,40 @@
     box-sizing: border-box;
     font-family: 'Righteous', cursive;
   }
+
   body {
-    color: #F9F9F9; /*Page Text Color*/
+    background: #F9F9F9;
+    margin: 8px;
   }
   /*HEADER CONTENT*/
-  .header {
-    position: fixed;
+
+  .head-nav {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+  }
+
+  .head-nav::before {
+    content: '';
+    position:absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#F9F9F9 ;
+    animation: showRight 1s ease forwards;
+    -webkit-animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    z-index: 50;
+  }
+
+  .header {
+    position: relative;
     width: 100%;
     background: transparent;
     padding: 20px 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 20 ;
   }
@@ -25,37 +46,12 @@
     position:relative;
     font-size: 45px;
     color: #02bc08;
-    text-decoration: none;
     font-weight: 550;
     text-decoration: underline;
     text-decoration-color: #02bc08;
     -moz-text-decoration-color: #02bc08;
   }
-  .logo::before {
-    content: '';
-    position:absolute;
-    top: 0;
-    right: 0;
-    width: 110%;
-    height: 100%;
-    background: #F9F9F9;
-    animation: showRight 1s ease forwards;
-    -webkit-animation: showRight 1s ease forwards;
-    animation-delay: .2s;
-  }
 
-  .navbar::before {
-    content: '';
-    position:absolute;
-    top: 10px;
-    right: 0;
-    width: 35%;
-    height: 80%;
-    background: #F9F9F9;
-    animation: showRight 2s ease forwards;
-    -webkit-animation: showRight 2s ease forwards;
-    animation-delay: .4s;
-}
   .navbar a {
     font-size: 25px;
     color: black;
@@ -79,29 +75,23 @@
     color: #d78100;
   }
 
+/*FOOTER/SOCIALS/PRODUCT PAGE*/
 
+.footer {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  height: 45px;
+  width: 130px;
+  display:flex;
+  justify-content: space-evenly;
+}
 /*SOCIALS*/
 
 .home-sci {
-  position: absolute;
-  bottom: 40px;
-  width: 170px;
+  position: inherit;
   display: flex;
-  justify-content: space-between;
-}
-
-.home-sci::before {
-  content: '';
-  position:absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #F9F9F9;
-  animation: showRight 1s ease forwards;
-  -webkit-animation: showRight 1s ease forwards;
-  animation-delay: 1s;
-  z-index: 2;
+  align-items: center;
 }
 
 .home-sci a {
@@ -137,8 +127,6 @@
 .home-sci a::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   width: 0;
   height: 100%;
   background: #d78100;
@@ -154,10 +142,13 @@
   width: 100%;
 }
 
+
 /*KEY FRAMES*/
 @keyframes showRight {
   100% {
     width: 0;
   }
 }
+
+
 
