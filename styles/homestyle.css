@@ -54,12 +54,11 @@ section {
 .logo {
   position:relative;
   font-size: 3rem;
-  color:var(--secondary-color);
+  color: var(--text-color);
+  text-shadow: 0px 2px 15px var(--secondary-color);
+  -webkit-text-stroke: 1px var(--secondary-color);
   font-weight: 600;
   cursor: default;
-  text-decoration: underline;
-  text-decoration-color: var(--secondary-color);
-  -moz-text-decoration-color: var(--secondary-color);
 }
 .navbar a {
   font-size: 2.7rem;
@@ -98,12 +97,21 @@ section {
   font-weight: 700;
 }
 
+
 .home-content h3:nth-of-type(2) {
   margin-bottom: 2rem;
 }
 
+strong {
+  color: var(--text-color);
+  text-shadow: 0px 2px 15px var(--secondary-color);
+  -webkit-text-stroke: 1px var(--secondary-color);
+}
+
 span {
-  color: var(--secondary-color);
+  color: var(--text-color);
+  text-shadow: 0px 2px 15px var(--main-color);
+  -webkit-text-stroke: 1px var(--main-color);
 }
 
 .home-content h1 {
@@ -138,7 +146,7 @@ span {
 
 .social-media a:hover {
   background: var(--main-color);
-  color: var(--bg-color);
+  color: var(--text-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -168,6 +176,7 @@ span {
 
 .btn:hover {
   box-shadow: 0 0 1rem var(--main-color);
+  color: var(--text-color);
 }
 
 /*ABOUT SECTION*/
@@ -182,10 +191,7 @@ span {
 
 .about-img img {
   width: 35vw;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  display: flex;
 }
 
 .heading {
