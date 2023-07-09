@@ -45,6 +45,12 @@ section {
   align-items: center;
   z-index: 100 ;
 }
+
+.header.sticky {
+  border-bottom: .1rem solid var(--secondary-color);
+  box-shadow: 1rem var();
+}
+
 .logo {
   position:relative;
   font-size: 3rem;
@@ -82,14 +88,9 @@ section {
   align-items: center;
 }
 
-.home-img {
+.home-img img{
   width: 35vw;
-  border: 2px dashed var(--secondary-color);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  display:flex;
 }
 
 .home-content h3 {
@@ -144,6 +145,7 @@ span {
 .btn {
   display: inline-flex;
   padding: 1rem 2.8rem;
+  margin-top: 2rem;
   margin-right: 2rem;
   background: var(--main-color);
   border-radius: 4rem;
@@ -165,7 +167,7 @@ span {
 }
 
 .btn:hover {
-  box-shadow: 0 0 1rem var(--main-color)
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 /*ABOUT SECTION*/
@@ -180,8 +182,6 @@ span {
 
 .about-img img {
   width: 35vw;
-  border: 2px dashed var(--main-color);
-  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -201,7 +201,7 @@ span {
 .about-content p {
   font-size: 1.6rem;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin: 2rem 0 3rem;
 }
 
 
